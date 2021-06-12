@@ -246,8 +246,7 @@
     ul li {
       cursor: move;
     }
-
-    /* new */
+    /* --- */ 
     /* Remove margins and padding from the list */
     ul {
       margin: 0;
@@ -356,12 +355,11 @@
       color: white;
     }
 
-    /* end of new */
-
     a {
       color: #428bca;
       text-decoration: none;
     }
+    /* --- */
 
     main {
       padding: 30px;
@@ -462,8 +460,6 @@
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script>
     // Create a new list item when clicking on the "Add" button
-    let newitem = [];
-    let item;
     function addnewElement() {
       $('#textenter').keypress(function (e) {
         if (e.which === 13) {

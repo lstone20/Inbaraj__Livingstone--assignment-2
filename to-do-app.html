@@ -493,6 +493,7 @@
       });
     }
 
+    // clicking on delete 'x' button removes the to-do item from the list
     $("#list").delegate(".close", "click", function () {
       $(this).parent().remove();
     });
@@ -502,6 +503,7 @@
       // focus on the input field
       document.getElementById("textenter").focus()
       addnewElement();
+      
       // Add a "checked" symbol when clicking on a list item
       let list = document.querySelector('.list > ul');
       list.addEventListener('click', function (ev) {
